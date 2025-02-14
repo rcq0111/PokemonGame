@@ -3,12 +3,34 @@ public abstract class Pokemon {
     private int level;
     private  String name;
     public Flyable flyable; // has-a 상속X 상관관계 표시
+    public Swimable swimable;
+
+    public Pokemon(int hp, int level, String name, Flyable flyable, Swimable swimable){
+        this.hp= hp;
+        this.level = level;
+        this.name = name;
+        this.flyable =flyable;
+        this.swimable =swimable;
+    }
+
+    public Pokemon(int hp, int level, String name, Swimable swimable){
+        this.hp= hp;
+        this.level = level;
+        this.name = name;
+        this.swimable =swimable;
+
+    }
 
     public Pokemon(int hp, int level, String name, Flyable flyable){
         this.hp= hp;
         this.level = level;
         this.name = name;
         this.flyable =flyable;
+
+    }
+
+    public void performSwimable(){
+        swimable.swim();
     }
 
     public void performFlyable(){
