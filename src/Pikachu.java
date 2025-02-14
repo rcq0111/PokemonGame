@@ -10,3 +10,4 @@ public class Pikachu extends Pokemon {
                 + "에게 전기 공격을 합니다.");
     }
 }
+// is-a관계
