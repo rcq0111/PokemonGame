@@ -52,4 +52,4 @@ public abstract class Pokemon {
     public abstract void attack(Pokemon target);
 }
 // is-a 관계 <<abstract>>
-
+// 추상 함수
