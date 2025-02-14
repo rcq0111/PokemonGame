@@ -13,22 +13,6 @@ public abstract class Pokemon {
         this.swimable =swimable;
     }
 
-    public Pokemon(int hp, int level, String name, Swimable swimable){
-        this.hp= hp;
-        this.level = level;
-        this.name = name;
-        this.swimable =swimable;
-
-    }
-
-    public Pokemon(int hp, int level, String name, Flyable flyable){
-        this.hp= hp;
-        this.level = level;
-        this.name = name;
-        this.flyable =flyable;
-
-    }
-
     public void performSwimable(){
         swimable.swim();
     }

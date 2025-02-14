@@ -1,6 +1,6 @@
 public class Pikachu extends Pokemon {
-    public Pikachu(int hp, int level, String name, Flyable flyable){
-        super(hp, level, name, flyable);
+    public Pikachu(int hp, int level, String name, Flyable flyable, Swimable swimable){
+        super(hp, level, name, flyable,swimable);
 
     }
 

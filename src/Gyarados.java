@@ -1,6 +1,6 @@
 public class Gyarados extends Pokemon{
-    public Gyarados(int hp, int level, String name, Swimable swimable){
-        super(hp, level, name, swimable);
+    public Gyarados(int hp, int level, String name,Flyable flyable, Swimable swimable){
+        super(hp, level, name,flyable, swimable);
 
     }
     @Override
