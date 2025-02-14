@@ -2,11 +2,21 @@ public abstract class Pokemon {
     private int hp;
     private int level;
     private  String name;
+    public Flyable flyable; // has-a 상속X 상관관계 표시
 
-    public Pokemon(int hp, int level, String name){
+    public Pokemon(int hp, int level, String name, Flyable flyable){
         this.hp= hp;
         this.level = level;
         this.name = name;
+        this.flyable =flyable;
+    }
+
+    public void performFlyable(){
+        flyable.fly();
+    }
+
+    public void setFlyable(Flyable f){
+        this.flyable = f;
     }
 
     public String getName() {

@@ -1,7 +1,7 @@
 
 public class Charizard extends Pokemon {
-    public Charizard(int hp, int level, String name){
-        super(hp, level, name);
+    public Charizard(int hp, int level, String name, Flyable flyable){
+        super(hp, level, name, flyable);
 
     }
 

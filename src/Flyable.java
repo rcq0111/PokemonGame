@@ -1,5 +1,5 @@
-public class Flyable {
-
+public interface Flyable {
+    void fly();
 
 }
 
